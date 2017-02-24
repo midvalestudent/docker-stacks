@@ -1,0 +1,5 @@
+*.sw[op]
+.~*
+.ipynb_checkpoints
+
+notebooks/Scratchpad.ipynb

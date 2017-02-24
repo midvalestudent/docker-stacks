@@ -1,0 +1,10 @@
+version: '2'
+services:
+  jupyter:
+    image: mv/jupyter/opencv:latest
+    build: .
+    user: jovyan
+    volumes:
+      - ./notebooks/:/home/jovyan/work/
+    ports:
+      - "8894:8888"

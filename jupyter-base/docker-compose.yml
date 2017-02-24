@@ -1,0 +1,13 @@
+version: '2'
+services:
+  jupyter:
+    image: mv/jupyter/base:latest
+    build:
+      context: .
+      args:
+        - NB_UID=$NB_UID
+    user: jovyan
+    volumes:
+      - ./notebooks/:/home/jovyan/work/
+    ports:
+      - "8890:8888"
